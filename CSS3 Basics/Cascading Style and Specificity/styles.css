@@ -1,12 +1,28 @@
+/*
+========================
+SPECIFICITY
+========================
+*/
+
+/* A CLASS HAS THE HIGHEST SPECIFICITY WITHIN AN EXTERNAL STYLE SHEET */
+
 #product-overview {
   background: #FF1B68;
 }
 
-h1 {
-  color: white;
-  font-family: 'Anton', sans-serif;
-}
-
+/* A CLASS HAS THE SECONED HIGHEST SPECIFICITY AND IS HIGHER THAN AN HTML TAG */
 .section-title {
   color: #2DDF5C;
+}
+
+/* AN HTML TAG HAS THE LOWEST SPECIFICTY IN AN EXTERNAL STYLE SHEET */
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+}
+
+/* WITH MULTIPLE HTML TAGS THE LATER POSITIONED HTML TAG WILL HAVE HIGHER SPECIFICITY */
+h1 {
+  font-family: 'Anton', sans-serif;
 }
