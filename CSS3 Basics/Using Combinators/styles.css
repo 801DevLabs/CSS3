@@ -1,0 +1,56 @@
+/*
+========================
+USING COMBINATORS
+========================
+*/
+
+/*
+ADJACENT SIBLINGS
+h2 + p {
+  color: red;
+}
+-> ADDS COLOR TO THE P TAGS THAT FOLLOW AN H2 TAG
+-> ALL ELEMENTS HAVE TO SHARE THE SAME PARENT
+-> SECOND ELEMENT COMES IMMEDIATELY AFTER FIRST ELEMENT
+
+GENERAL SIBLINGS
+h2 ~ p {
+  color: red;
+}
+-> BOTH ELEMENTS MUST SHARE THE SAME PARENT
+-> THE SECOND ELEMENT MUST COME AFTER THE FIRST ELEMENT
+
+
+CHILD COMBINATOR
+div > p {
+  color: red;
+}
+-> APPLYS TO ALL ELEMENTS THAT ARE A DIRECT CHILD OF THE FIRST ELEMENT, AND WILL NOT INCLUDE NESTED ELEMENTS
+
+DESCENDANT COMBINATOR
+div p {
+  color: red;
+}
+-> APPLYS TO ALL P TAGS WITHIN THE ELEMENT, AND INCLUDES NESTED ELEMENTS
+*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#product-overview {
+  background: #FF1B68;
+}
+
+.section-title {
+  color: #2DDF5C;
+}
+
+#product-overview h1 {
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+/* h1 {
+  font-family: sans-serif;
+} */
