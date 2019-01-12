@@ -16,6 +16,7 @@ body {
   color: #2DDF5C;
 }
 
+/* A COMBINATOR STYLE HAS A HIGHER SPECIFICITY THAN AN HTML TAG */
 #product-overview h1 {
   color: white;
   font-family: 'Anton', sans-serif;
